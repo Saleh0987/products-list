@@ -3,6 +3,7 @@
     margin: 0;
     font-family: monospace;
 }
+
 body{
     display: flex;
     flex-direction: column;
@@ -14,22 +15,27 @@ body{
     color: #080808;
     padding: 10px 0;
 }
+
 .container{
     margin: 0 auto;
     width: 96%;
     max-width: 800px;
 }
+
 .table{
     width: 100%;
     box-sizing: border-box;
 }
+
 .item.header{
     background-color: #0c0cb2;
     color: #f7f7f7;
 }
+
 .item.header p{
     font-weight: bold;
 }
+
 .item{
     display: flex;
     flex-direction: row;
@@ -39,6 +45,7 @@ body{
     margin: 6px 0px;
     background-color: #e3e3e3;
 }
+
 .item p{
     padding: 8px 2px;
     width: 100%;
@@ -46,6 +53,7 @@ body{
     text-align: center;
     border: 1px solid #08080833;
 }
+
 .item .delete{
     background-color: #b90c0c;
     color: #e3e3e3;
@@ -53,9 +61,11 @@ body{
     cursor: pointer;
     transition-duration: 0.3s;
 }
+
 .item .delete:hover{
     opacity: 0.8;
 }
+
 form{
     height: 40px;
     width: 100%;
@@ -63,6 +73,7 @@ form{
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 form *{
     width: 100%;
     box-sizing: border-box;
@@ -70,10 +81,12 @@ form *{
     padding: 2px 4px;
     font-size: 16px
 }
+
 form input[type="text"], form input[type="number"]{
     outline: none;
     background-color: #e3e3e3;
 }
+
 form input[type="submit"]{
     font-weight: bold;
     background-color: #0cb90c;
@@ -81,13 +94,26 @@ form input[type="submit"]{
     font-size: 19px;
     letter-spacing: 0.6px;
     cursor: pointer;
-    transition-duration: 0.3s;
 }
+    
 form input[type="submit"]:hover{
     opacity: 0.8;
 }
+
 .text{
     padding: 10px;
     font-size: 18px;
     border: 2px solid #08080833;
+}
+
+.count{
+    width: 90%;
+    padding:5px 10px;
+    display:flex;
+    align-items:center;
+}
+
+.count svg{
+    cursor:pointer;
+    width:50%;
 }
